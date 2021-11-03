@@ -19,7 +19,8 @@ apt install -y x2goclient
 source $(dirname $0)/common/install_thinlinc
 
 # graphics
-apt install -y ksnip gpick
+apt install -y gpick
+snap install ksnip
 
 # internet
 apt install -y filezilla torbrowser-launcher chromium-browser
