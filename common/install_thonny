@@ -2,7 +2,9 @@
 
 if command -v /usr/local/bin/thonny &> /dev/null
 then
+    echo "--------------------------------------------------------------------------------"
     echo "** thonny installed"
+    echo "--------------------------------------------------------------------------------"
 else
     echo "Installing thonny"
     cd /tmp

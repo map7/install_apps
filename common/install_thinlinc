@@ -2,7 +2,9 @@
 
 if command -v /opt/thinlinc/bin/tlclient &> /dev/null
 then
+    echo "--------------------------------------------------------------------------------"
     echo "** thinlinc installed"
+    echo "--------------------------------------------------------------------------------"
 else
     echo "Installing thinlinc"
     cd /tmp

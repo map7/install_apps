@@ -2,7 +2,9 @@
 
 if command -v /opt/xeoma/xeoma.app &> /dev/null
 then
+    echo "--------------------------------------------------------------------------------"
     echo "** xeoma installed"
+    echo "--------------------------------------------------------------------------------"
 else
     echo "Installing xeoma"
     mkdir -p /opt/xeoma

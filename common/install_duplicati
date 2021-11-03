@@ -2,7 +2,9 @@
 
 if command -v /usr/bin/duplicati &> /dev/null
 then
+    echo "--------------------------------------------------------------------------------"
     echo "** duplicati installed"
+    echo "--------------------------------------------------------------------------------"
 else
     echo "Installing duplicati"
     cd /tmp

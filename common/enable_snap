@@ -3,9 +3,12 @@
 # Required for Linux Mint installs
 if command -v /usr/bin/snap &> /dev/null
 then
+  echo "--------------------------------------------------------------------------------"
   echo "** SNAP installed"
+  echo "--------------------------------------------------------------------------------"
 else
   rm /etc/apt/preferences.d/nosnap.pref
   apt update
   apt install snapd
+  snap refresh
 fi
