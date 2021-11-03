@@ -26,7 +26,7 @@ snap install ksnip
 apt install -y filezilla torbrowser-launcher chromium-browser ktorrent
 
 # other
-apt install -y solaar redshift-gtk gparted gkrellm grub-customizer clamav
+apt install -y solaar redshift-gtk gparted gkrellm grub-customizer clamav sshfs
 snap install rpi-imager
 
 # backup/sync
