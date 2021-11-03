@@ -19,23 +19,27 @@ apt install -y x2goclient
 source $(dirname $0)/common/install_thinlinc
 
 # graphics
-apt install -y gpick
+apt install -y gpick cheese
 snap install ksnip
 
 # internet
-apt install -y filezilla torbrowser-launcher chromium-browser
+apt install -y filezilla torbrowser-launcher chromium-browser ktorrent
 
 # other
-apt install -y solaar paperwork-gtk
+apt install -y solaar redshift-gtk gparted gkrellm grub-customizer clamav
 snap install rpi-imager
 
 # backup/sync
-apt install -y timeshift syncthing
+apt install -y timeshift syncthing dropbox
 source $(dirname $0)/common/install_duplicati
 
 # multimedia
 apt install -y kodi kodi-pvr-hts steam vlc
 source $(dirname $0)/common/install_xeoma
 
+# Office
+apt install -y paperwork-gtk pdfarranger
+snap install xournalpp
+
 # chat
-snap install zoom-client skype teams discord telegram-desktop signal-desktop
+snap install zoom-client skype teams discord telegram-desktop signal-desktop whatsapp-app
