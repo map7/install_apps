@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+cd "$(dirname "$0")"
+git pull
+sudo ./install_workstation
+cd $OLDPWD
