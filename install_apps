@@ -31,17 +31,7 @@ apt install -y timeshift syncthing
 source $(dirname $0)/common/install_duplicati
 
 # programming
-apt install -y rbenv fritzing zeal git tig libpq5 postgresql libpq-dev imagemagick
-#apt install -y nodejs npm # install 'n' instead
-source $(dirname $0)/common/install_thonny
-snap install androidsdk
-
-# Arduino
-apt install -y arduino
-
-# Work around under Ubuntu 21.04
-sudo apt install libserialport0 patchelf
-sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib/x86_64-linux-gnu/liblistSerialsj.so.1.4.0
+source $(dirname $0)/common/install_programming_tools
 
 # multimedia
 apt install -y kodi kodi-pvr-hts steam vlc
