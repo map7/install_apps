@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if command -v /usr/local/bin/thonny &> /dev/null
+then
+    echo "** thonny installed"
+else
+    echo "Installing thonny"
+    cd /tmp
+    apt install -y python3-pip
+    pip3 install thonny
+    cd $OLDPWD
+fi

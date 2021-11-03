@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+if command -v /usr/bin/duplicati &> /dev/null
+then
+    echo "** duplicati installed"
+else
+    echo "Installing duplicati"
+    cd /tmp
+
+    # Install
+    apt install -y mono-devel
+    wget https://updates.duplicati.com/beta/duplicati_2.0.6.3-1_all.deb --no-check-certificate
+    dpkg -i duplicati_2.0.6.3-1_all.deb
+    apt install -f -y
+
+    # Enable
+    systemctl enable duplicati
+    systemctl start duplicati
+
+    cd $OLDPWD
+fi

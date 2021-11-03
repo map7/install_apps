@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if command -v /opt/xeoma/xeoma.app &> /dev/null
+then
+    echo "** xeoma installed"
+else
+    echo "Installing xeoma"
+    mkdir -p /opt/xeoma
+    cd /opt/xeoma
+    wget https://felenasoft.com/xeoma/downloads/latest/linux/xeoma_linux64.tgz
+    tar xvf xeoma_linux64.tgz
+    chmod +x xeoma.app
+    cd $OLDPWD
+fi

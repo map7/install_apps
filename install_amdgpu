@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [ -d /opt/amdgpu ]
+then
+    echo "** amdgpu installed"
+else
+    DIR=$OLDPWD
+    echo "Installing amdgpu"
+    cd /tmp
+    wget --referer=http://support.amd.com https://drivers.amd.com/drivers/linux/amdgpu-pro-21.30-1290604-ubuntu-20.04.tar.xz
+    tar xvf amdgpu-pro-21.30-1290604-ubuntu-20.04.tar.xz
+    cd amdgpu-pro-21.30-1290604-ubuntu-20.04
+    ./amdgpu-install
+    cd $DIR
+fi

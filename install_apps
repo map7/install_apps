@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+# Tested on Ubuntu 21.04
+# Run with sudo ./install_apps
+
+apt install -y emacs mu4e isync ripgrep
+
+# Password manager
+apt install -y pass qtpass upass keepassxc
+
+# Tools
+apt install -y terminator screen htop mg zsh gkrellm aptitude synapse inxi neofetch apt-file
+apt-file update
+
+# Remote assistance/work
+apt install -y x2goclient
+source $(dirname $0)/install_thinlinc
+
+# graphics
+apt install -y ksnip gpick
+
+# internet
+apt install -y filezilla torbrowser-launcher chromium-browser
+
+# other
+apt install -y solaar paperwork-gtk
+snap install rpi-imager
+
+# backup/sync
+apt install -y timeshift syncthing
+source $(dirname $0)/install_duplicati
+
+# programming
+apt install -y rbenv fritzing zeal git tig libpq5 postgresql libpq-dev imagemagick
+#apt install -y nodejs npm # install 'n' instead
+source $(dirname $0)/install_thonny
+snap install androidsdk
+
+# Arduino
+apt install -y arduino
+
+# Work around under Ubuntu 21.04
+sudo apt install libserialport0 patchelf
+sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib/x86_64-linux-gnu/liblistSerialsj.so.1.4.0
+
+# multimedia
+apt install -y kodi kodi-pvr-hts steam vlc
+source $(dirname $0)/install_xeoma
+
+# chat
+snap install zoom-client skype teams discord telegram-desktop signal-desktop
+
+# AMDGPU
+source $(dirname $0)/install_amdgpu

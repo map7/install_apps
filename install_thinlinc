@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if command -v /opt/thinlinc/bin/tlclient &> /dev/null
+then
+    echo "** thinlinc installed"
+else
+    echo "Installing thinlinc"
+    cd /tmp
+    wget https://www.cendio.com/downloads/clients/thinlinc-client_4.13.0-2172_amd64.deb
+    dpkg -i /tmp/thinlinc-client_4.13.0-2172_amd64.deb
+    cd $OLDPWD
+fi
