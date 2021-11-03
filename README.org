@@ -13,3 +13,12 @@ This will setup the applications for my development box
 This will setup the applications for a remote workstation for staff
 (Last tested on a ASUS PN50 AMD NUC running Linux Mint 20.2)
 : sudo ./install_workstation
+
+** Running update through MeshCentral
+
+1. Install MeshCentral client
+2. Select computer
+3. Click Group task -> Run
+4. Paste in
+   : git clone https://github.com/map7/install_apps.git;cd install_apps;./update
+5. Grab a coffee
