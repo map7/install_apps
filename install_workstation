@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Tested on Linux Mint 20.2
+# Run with sudo ./install_workstation
+
+# Install common apps
+source $(dirname $0)/common/install_common
