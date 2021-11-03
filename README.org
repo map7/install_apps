@@ -1,0 +1,3 @@
+* install_apps
+
+Install scripts for development machines and remote workstations written in bash so that it works on most systems out of the box.
