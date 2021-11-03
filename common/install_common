@@ -3,18 +3,20 @@
 # Tested on Ubuntu 21.04
 # Run with sudo ./install_apps
 
+source $(dirname $0)/common/enable_snap
+
 apt install -y emacs mu4e isync ripgrep
 
 # Password manager
 apt install -y pass qtpass upass keepassxc
 
 # Tools
-apt install -y terminator screen htop mg zsh gkrellm aptitude synapse inxi neofetch apt-file
+apt install -y terminator screen htop mg zsh gkrellm aptitude synapse inxi neofetch apt-file pigz
 apt-file update
 
 # Remote assistance/work
 apt install -y x2goclient
-source $(dirname $0)/install_thinlinc
+source $(dirname $0)/common/install_thinlinc
 
 # graphics
 apt install -y ksnip gpick
@@ -28,11 +30,11 @@ snap install rpi-imager
 
 # backup/sync
 apt install -y timeshift syncthing
-source $(dirname $0)/install_duplicati
+source $(dirname $0)/common/install_duplicati
 
 # multimedia
 apt install -y kodi kodi-pvr-hts steam vlc
-source $(dirname $0)/install_xeoma
+source $(dirname $0)/common/install_xeoma
 
 # chat
 snap install zoom-client skype teams discord telegram-desktop signal-desktop
