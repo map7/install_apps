@@ -14,7 +14,7 @@ apt-file update
 
 # Remote assistance/work
 apt install -y x2goclient
-source $(dirname $0)/install_thinlinc
+source $(dirname $0)/common/install_thinlinc
 
 # graphics
 apt install -y ksnip gpick
@@ -28,12 +28,12 @@ snap install rpi-imager
 
 # backup/sync
 apt install -y timeshift syncthing
-source $(dirname $0)/install_duplicati
+source $(dirname $0)/common/install_duplicati
 
 # programming
 apt install -y rbenv fritzing zeal git tig libpq5 postgresql libpq-dev imagemagick
 #apt install -y nodejs npm # install 'n' instead
-source $(dirname $0)/install_thonny
+source $(dirname $0)/common/install_thonny
 snap install androidsdk
 
 # Arduino
@@ -45,10 +45,10 @@ sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib
 
 # multimedia
 apt install -y kodi kodi-pvr-hts steam vlc
-source $(dirname $0)/install_xeoma
+source $(dirname $0)/common/install_xeoma
 
 # chat
 snap install zoom-client skype teams discord telegram-desktop signal-desktop
 
 # AMDGPU
-source $(dirname $0)/install_amdgpu
+source $(dirname $0)/common/install_amdgpu
