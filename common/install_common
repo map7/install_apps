@@ -34,7 +34,7 @@ apt install -y timeshift syncthing dropbox
 source $(dirname $0)/common/install_duplicati
 
 # multimedia
-apt install -y kodi kodi-pvr-hts steam vlc
+apt install -y kodi kodi-pvr-hts steam vlc handbrake
 source $(dirname $0)/common/install_xeoma
 
 # Office
