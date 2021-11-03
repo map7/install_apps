@@ -14,7 +14,7 @@ apt-file update
 
 # Remote assistance/work
 apt install -y x2goclient
-source $(dirname $0)/common/install_thinlinc
+source $(dirname $0)/install_thinlinc
 
 # graphics
 apt install -y ksnip gpick
@@ -28,17 +28,11 @@ snap install rpi-imager
 
 # backup/sync
 apt install -y timeshift syncthing
-source $(dirname $0)/common/install_duplicati
-
-# programming
-source $(dirname $0)/common/install_programming_tools
+source $(dirname $0)/install_duplicati
 
 # multimedia
 apt install -y kodi kodi-pvr-hts steam vlc
-source $(dirname $0)/common/install_xeoma
+source $(dirname $0)/install_xeoma
 
 # chat
 snap install zoom-client skype teams discord telegram-desktop signal-desktop
-
-# AMDGPU
-source $(dirname $0)/common/install_amdgpu

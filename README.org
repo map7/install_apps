@@ -1,3 +1,9 @@
 * install_apps
 
 Install scripts for development machines and remote workstations written in bash so that it works on most systems out of the box.
+
+** Install dev box
+
+This will setup the applications for my development box
+(Last tested on a Lenovo P14s AMD running Ubuntu 21.04)
+: sudo ./install_dev

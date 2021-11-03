@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Tested on Ubuntu 21.04
+# Run with sudo ./install_dev
+
+# Install common apps
+source $(dirname $0)/common/install_common
+
+# programming
+source $(dirname $0)/common/install_programming_tools
+
+# AMDGPU
+source $(dirname $0)/common/install_amdgpu
