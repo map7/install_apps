@@ -20,5 +20,5 @@ This will setup the applications for a remote workstation for staff
 2. Select computer
 3. Click Group task -> Run
 4. Paste in
-   : git clone https://github.com/map7/install_apps.git;cd install_apps;./update
+   : git clone https://github.com/map7/install_apps.git;./install_apps/update
 5. Grab a coffee
